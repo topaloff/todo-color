@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row d-flex justify-content-around">
+        <div class="col text-center" (click)="getColor('red')">Red</div>
+        <div class="col text-center" (click)="getColor('green')">Green</div>
+        <div class="col text-center" (click)="getColor('blue')">Blue</div>
+        <div class="col text-center" (click)="getColor('yellow')">Yellow</div>
+    </div>
+    <app-task  *ngFor="let task of tasks" [task]="task"></app-task>
+</div>
+<app-add></app-add>

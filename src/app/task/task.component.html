@@ -1,0 +1,11 @@
+<div class="row" [style.color]="task.color">
+        <div class="col-6"> {{ task.title }}</div>
+        <div class="col-6"> 
+            <div class="row d-flex justify-content-around">
+                <div class="col text-center" (click)="setColor('red')">Red</div>
+                <div class="col text-center" (click)="setColor('green')">Green</div>
+                <div class="col text-center" (click)="setColor('blue')">Blue</div>
+                <div class="col text-center" (click)="setColor('yellow')">yellow</div>
+            </div>    
+        </div>
+    </div>
